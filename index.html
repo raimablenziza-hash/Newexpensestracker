@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Expense Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>💰 Expense Tracker</h1>
+
+  <section>
+    <h3>Settings</h3>
+    <label>Currency:
+      <input id="currency" value="RWF" />
+    </label>
+    <label>Monthly Budget:
+      <input id="budget" type="number" />
+    </label>
+    <button onclick="saveSettings()">Save Settings</button>
+    <p id="warning"></p>
+  </section>
+
+  <section>
+    <h3>Add Expense</h3>
+    <input id="amount" type="number" placeholder="Amount" />
+    <input id="category" placeholder="Category" />
+    <input id="date" type="date" />
+    <button onclick="addExpense()">Add</button>
+  </section>
+
+  <section>
+    <h3>This Month</h3>
+    <p>Total: <span id="total">0</span> <span id="currencyLabel">RWF</span></p>
+    <div id="list"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
