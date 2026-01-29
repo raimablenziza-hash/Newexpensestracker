@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+input, button {
+  margin: 5px 0;
+  padding: 8px;
+}
+
+#list div {
+  margin: 5px 0;
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
